@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:context="com.ben.moviesdb.activities.MainActivity">
+
+    <fragment
+        android:name="com.ben.moviesdb.movieslist.ui.MoviesListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main_movies_list_fragment"
+        android:layout_weight="1" />
+
+    <fragment
+        android:name="com.ben.moviesdb.moviedetails.MovieDetailsFragment"
+        android:id="@+id/activity_main_movie_details_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
